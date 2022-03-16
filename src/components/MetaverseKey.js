@@ -8,8 +8,8 @@ function MetaverseKey() {
     <>
         <h1 className='text-white text-4xl font-extrabold mb-16'>This will be the key for the metaverse</h1>
         <div className='flex-col mb-16 justify-center items-center sm:flex-row sm:flex'>
-            <video autoplay muted loop className='mb-8 h-[50vh] mx-auto sm:mx-2 sm:mb-0' >
-                <source src="https://openseauserdata.com/files/d1bfa3050f09c7a76ea55043abb83b90.mp4#t=0.001" width={300} height={200} type="video/mp4" />
+            <video autoplay controls muted loop className='mb-8 h-[50vh] mx-auto sm:mx-2 sm:mb-0' >
+                <source src="/gyatsonft.mp4" width={300} height={200} type="video/mp4" />
             </video>
             <div className="flex justify-center">
                 <section className="sombra w-88 h-80 flex-col sm:ml-10 sm:h-[50vh] md:w-96 bg-[#2f2f2f] rounded-2xl">
