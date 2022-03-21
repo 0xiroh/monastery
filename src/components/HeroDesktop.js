@@ -16,7 +16,7 @@ function HeroDesktop() {
                 <button type='submit' value='pirobo' className='w-[38%] font-bold h-10 bg-[#B2FF97]'> Get early access now</button>
             </form>
         </div>
-        <div className='mt-5'>
+        <div className=''>
             <ReactPlayer className='' width={590} height={450} style={{ margin: '' }}  light='images/thumbnailVideo.png' controls url='https://monastery-nft.s3.us-east-1.amazonaws.com/resources/mst-video-nft.mp4'/>
 
         </div>

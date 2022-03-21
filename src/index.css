@@ -1,11 +1,11 @@
+@font-face {
+  font-family: fontMstry;
+  src: url(./fonts/TTHoves-Regular.ttf);
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: fontMstry;
-  src: url(/Users/tincho/builds/monastery/public/fonts/TTHoves-Regular.ttf);
-}
 
 
 body {              

@@ -15,7 +15,7 @@ function MetaverseKey() {
             </div>
             <h1 className='text-white text-4xl block text-center font-extrabold my-20 sm:my-0 sm:order-4'>Wear MST<br/> in the metaverse</h1>
             <div className="flex justify-center">
-                <section className="sombra w-88 h-[100%] flex-col sm:h-[33vh] sm:w-[25vw] bg-[#2f2f2f] rounded-2xl">
+                <section className="sombra w-88 h-[100%] flex-col sm:h-[vh] sm:w-[25vw] bg-[#2f2f2f] rounded-2xl">
                     <div className="flex justify-flex-start items-center mt-5 mx-auto">
                         <img src="https://cdn.cdnlogo.com/logos/d/92/decentraland.svg" className="h-16"/>
                         <div class="flex-col items-center justify-center">
