@@ -1,7 +1,18 @@
 function Footer() {
   return (
-          <footer className="mt-5 flex-col mx-[-30px]">
-              <section className="bg-white flex h-40 justify-around items-center">
+          <footer className="my-10 flex-col">
+              <section className=" grid grid-cols-2 h-40 justify-around items-center">
+                  <img src="./images/logoFooter.png" className="col-span-2 my-10 ml-6"/>
+                  <ul>
+                      <li className="text-white">Sections</li>
+                      <li className="text-white"><a href="#Roadmap">Roadmap</a></li>
+                      <li className="text-white">How to buy</li>
+                  </ul>
+                  <ul>
+                      <li className="text-white">Company</li>
+                      <li className="text-white"><a href="#Roadmap">{`Terms & Conditions`}</a></li>
+                      <li className="text-white">How to buy</li>
+                  </ul>
                   <div className="flex-col">
                       <h3 className="ml-1">Follow us</h3>
                       <div className="flex">
@@ -11,7 +22,6 @@ function Footer() {
 
                   </div>
                   <div className="">
-                      <img src="./images/monastery-footer.png" className="h-14"/>
                   </div>
                   <div className="flex-col">
                       <h6 className="block text-left">Legal</h6>
@@ -19,7 +29,7 @@ function Footer() {
                       <a href="https://www.decentraland.org/privacy-policy" className="block text-xs text-left underline">Privacy policy</a>
                   </div>
               </section>
-              <section className="bg-black flex justify-center h-20 items-center">
+              <section className="bg-black flex my-20 justify-center h-20 items-center">
                   <h1 className="text-white">Powered by Centra</h1>
                   <img src="./images/centra.svg" alt="Centra Logo" className="h-10"/>
               </section>

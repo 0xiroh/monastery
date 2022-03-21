@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 import MobileVideo from './components/MobileVideo';
 import MetaverseKey from './components/MetaverseKey';
 import RoadmapDesktop from './components/RoadmapDesktop';
+import RoadmapMobile from './components/RoadmapMobile';
 
 function App() {
   return (
@@ -25,9 +26,11 @@ function App() {
       <MobileVideo />
       <PerksDesktop />
       <Perks />
+      <Chakra/>
       <MetaverseKey />
       <Chakra />
       <HowToBuy />
+      <RoadmapMobile />
       <RoadmapDesktop />
       <Footer />
     </div>
