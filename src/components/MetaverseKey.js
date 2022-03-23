@@ -26,7 +26,7 @@ function MetaverseKey() {
                     <div className="flex justify-center items-center mt-10 border-0 rounded-2xl ">
                     <model-viewer
                         height="100%"
-                        src="/models/gorraYQ.gltf"
+                        src="/models/nohair.gltf"
                         camera-controls
                         ar
                         auto-rotate
