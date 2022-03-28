@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react"
+import { Link } from "react-router-dom";
+import Sidebar from "./Sidebar";
 
 
     
@@ -68,7 +70,7 @@ function Navbar() {
   var snd = new Audio("https://mstry.s3.amazonaws.com/mstrTrimmed.mp3");
   const togglePlay = sound => sound.pause ? (sound.play() && console.log(sound.paused)) : (sound.pause() && console.log(sound.paused));
   return (
-    <nav class="flex max-w-[95vw] justify-end align-center items-center mt-4 sm:justify-around sm:mx-auto sm:mb-10">
+    <nav class="flex max-w-[95vw] justify-center align-center items-center mt-4 sm:justify-around sm:mx-auto sm:mb-10">
         <div className="items-center justify-center hidden sm:flex sm:ml-[-3%]">
             <ul className="flex items-center justify-center">
                 <li className="mx-4 cursor-pointer" onClick={() => togglePlay(snd)}>
@@ -90,7 +92,7 @@ function Navbar() {
             </ul>
         </div>
         <div className=''>
-            <img className='w-44' src='/images/logoHeader.svg' alt='Monastery Logo'></img>
+            <Link to='/'><img className='w-44' src='/images/logoHeader.svg' alt='Monastery Logo'></img></Link>
         </div>
         <div className="items-center justify-center hidden sm:flex">
             <ul className="flex items-center justify-center ">
@@ -103,7 +105,6 @@ function Navbar() {
                 </li>
             </ul>
         </div>
-        <img className='w-6 ml-[15%] md:hidden' src='/images/burgerMenu.svg' alt='burger menu'></img>
     </nav>
   )
 }

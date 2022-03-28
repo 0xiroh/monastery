@@ -15,24 +15,29 @@ import MobileVideo from './components/MobileVideo';
 import MetaverseKey from './components/MetaverseKey';
 import RoadmapDesktop from './components/RoadmapDesktop';
 import RoadmapMobile from './components/RoadmapMobile';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <HeroDesktop />
-      <HeroText />
-      <CallToAction />
-      <MobileVideo />
-      <PerksDesktop />
-      <Perks />
-      <Chakra/>
-      <MetaverseKey />
-      <Chakra />
-      <HowToBuy />
-      <RoadmapMobile />
-      <RoadmapDesktop />
-      <Footer />
+      <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"}/>
+      <div id='page-wrap'>
+
+        <Navbar />
+        <HeroDesktop />
+        <HeroText />
+        <CallToAction />
+        <MobileVideo />
+        <PerksDesktop />
+        <Perks />
+        <Chakra/>
+        <MetaverseKey />
+        <Chakra />
+        <HowToBuy />
+        <RoadmapMobile />
+        <RoadmapDesktop />
+        <Footer />
+      </div>
     </div>
   );
 }
