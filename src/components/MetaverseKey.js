@@ -10,7 +10,7 @@ function MetaverseKey() {
             <h1 className='text-white text-4xl font-extrabold mb-10 sm:my-0'>This will be the key<br/> for the metaverse</h1>
             <div className='flex justify-center'>
                 <video autoplay controls muted loop className='mb-8 w-[80vw] h-[60vh] mx-auto sm:mx-2 sm:mb-0 sm:w-[25vw] sm:h-[33vh]' >
-                    <source src="/MonasteryXrma.07.mp4" width={250} height={200} type="video/mp4" />
+                    <source src="https://monastery-nft.s3.us-east-1.amazonaws.com/resources/MonasteryXrma.07.mp4" width={250} height={200} type="video/mp4" />
                 </video>
             </div>
             <h1 className='text-white text-4xl block text-center font-extrabold my-20 sm:my-0 sm:order-4'>Wear MST<br/> in the metaverse</h1>
