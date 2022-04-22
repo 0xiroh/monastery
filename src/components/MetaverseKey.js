@@ -13,7 +13,10 @@ function MetaverseKey() {
                     <source src="https://monastery-nft.s3.us-east-1.amazonaws.com/resources/MSTxRMA.mp4" width={250} height={200} type="video/mp4" />
                 </video>
             </div>
-            <h1 className='text-white text-4xl block text-center font-extrabold my-20 sm:my-0 sm:order-4'>Wear MST<br/> in the metaverse</h1>
+            <div className='flex-col sm:order-4 sm:mx-auto'>
+                <h1 className='text-white text-4xl block text-center font-extrabold my-20 sm:my-0'>Wear MST<br/> in the metaverse</h1>
+                <p className='text-white'>The Gyatso NFT is going to be our genesis</p>
+            </div>
             <div className="flex justify-center">
                 <section className="sombra w-88 h-[100%] flex-col sm:h-[vh] sm:w-[25vw] bg-[#2f2f2f] rounded-2xl">
                     <div className="flex justify-flex-start items-center mt-5 mx-auto">

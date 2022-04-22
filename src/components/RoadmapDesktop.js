@@ -7,37 +7,41 @@ function RoadmapDesktop() {
         <p className='text-white fon text-lg mb-16'>Once we hit a target sell through percentage, MST will deliver each goal.<br/> More news will deploy in the future.</p>
         <div className='flex'>
             <ul className='grid mx-auto text-center grid-cols-4 gap-x-28 gap-y-10 mb-20'>
-                <li className='flex-col w-[15vw]'>
+                <li className='flex-col w-[12vw]'>
                     <h1 className=' bg-[rgb(255,255,255,1)] font-extrabold text-2xl pt-11 block h-28 mb-3'>20%</h1>   
-                    <p className='text-white font-light w-40 mx-auto text-md text-justify'>Claim your Gyatso cap for the metaverse and IRL.</p>
+                    <p className='text-white font-light w-40 mx-auto text-md text-justify'>Claim your  Gyatso cap for the metaverse and IRL. </p>
                 </li>
-                <li className='flex-col w-[15vw]'>
-                    <h1 className=' bg-[rgb(255,255,255,1)] font-extrabold text-2xl pt-11 block h-28 mb-3'>30%</h1>   
+                <li className='flex-col w-[12vw]'>
+                    <h1 className=' bg-[rgb(255,255,255,0.95)] font-extrabold text-2xl pt-11 block h-28 mb-3'>35%</h1>   
                     <p className='text-white font-light text-md  w-40 mx-auto text-justify'>Claim 3 extra items of exclusive merchandise of MST.</p>
                 </li>
-                <li className='flex-col w-[15vw]'>
-                    <h1 className=' bg-[rgb(255,255,255,0.875)] font-extrabold text-2xl pt-11 block h-28 mb-3'>35%</h1>   
-                    <p className='text-white font-light text-md w-40 mx-auto text-justify'>Random invitations to travel and witness MST operations.</p>
+                <li className='flex-col w-[12vw]'>
+                    <h1 className=' bg-[rgb(255,255,255,0.875)] font-extrabold text-2xl pt-11 block h-28 mb-3'>50%</h1>   
+                    <p className='text-white font-light text-md w-40 mx-auto text-justify'>Random invitations to get to know Medellín MST style. <br/><br/> Events, luxury restaurants and experiences.</p>
                 </li>
-                <li className='flex-col w-[15vw]'>
-                    <h1 className=' bg-[rgb(255,255,255,0.75)] font-extrabold text-2xl pt-11 block h-28 mb-3'>50%</h1>   
-                    <p className='text-white font-light text-md w-40 mx-auto text-justify'>Exclusive MST party for Gyatso NFT holders.</p>
+                <li className='flex-col w-[12vw]'>
+                    <h1 className=' bg-[rgb(255,255,255,0.75)] font-extrabold text-2xl pt-11 block h-28 mb-3'>65%</h1>   
+                    <p className='text-white font-light text-md w-40 mx-auto text-justify'>Party with MST in Medellin ONLY for Gyatso NFT holders.
+
+Party the MST style , DJs , artists , models and more.
+</p>
                 </li>
-                <li className='flex-col w-[15vw]'>
-                    <h1 className=' bg-[rgb(255,255,255,0.625)] font-extrabold text-2xl pt-11 block h-28 mb-3'>65%</h1>   
-                    <p className='text-white font-light text-md w-40 mx-auto text-justify'>Exclusive metaverse concert with MST.</p>
+                <li className='flex-col w-[12vw]'>
+                    <h1 className=' bg-[rgb(255,255,255,0.625)] font-extrabold text-2xl pt-11 block h-28 mb-3'>75%</h1>   
+                    <p className='text-white font-light text-md w-40 mx-auto text-justify'>Claim 1 exclusive new merch from this collection, inspired by the metaverse</p>
                 </li>
-                <li className='flex-col w-[15vw]'>
-                    <h1 className=' bg-[rgb(255,255,255,0.5)] font-extrabold text-2xl pt-11 block h-28 mb-3'>75%</h1>   
-                    <p className='text-white font-light text-md w-40 mx-auto text-justify'>Random invitations to create a new cap with MST.</p>
+                <li className='flex-col w-[12vw]'>
+                    <h1 className=' bg-[rgb(255,255,255,0.5)] font-extrabold text-2xl pt-11 block h-28 mb-3'>80%</h1>   
+                    <p className='text-white font-light text-md w-40 mx-auto text-justify'>Random invitations to create a new cap with MST and RMA DESIGNS.</p>
                 </li>
-                <li className='flex-col w-[15vw]'>
-                    <h1 className=' bg-[rgb(255,255,255,0.375)] font-extrabold text-2xl pt-11 block h-28 mb-3'>80%</h1>   
-                    <p className='text-white font-light text-md w-40 mx-auto text-justify'>Exclusive AMAs with MST and recognized artist.</p>
+                <li className='flex-col w-[12vw]'>
+                    <h1 className=' bg-[rgb(255,255,255,0.375)] font-extrabold text-2xl pt-11 block h-28 mb-3'>95%</h1>   
+                    <p className='text-white font-light text-md w-40 mx-auto text-justify'>Private AMAs with MST and recognized artists and models.</p>
                 </li>
-                <li className='flex-col w-[15vw]'>
-                    <h1 className=' bg-[rgb(255,255,255,0.25)] font-extrabold text-2xl pt-11 block h-28 mb-3'>100%</h1>   
-                    <p className='text-white font-light text-md w-40 mx-auto text-justify'>Yatch party exlusive invitation.</p>
+                <li className='flex-col w-[12vw]'>
+                    <h1 className=' bg-[rgb(255,255,255,0.25)] font-black text-2xl pt-11 block h-28 mb-3'>100%</h1>   
+                    <p className='text-white font-light text-md w-[60%] mx-auto text-justify'>Get Access to the 
+                            MONASTERY FESTIVAL in cartagena. <br/><br/>Concerts, beach, models and yatchs.</p>
                 </li>
             </ul>
         </div>

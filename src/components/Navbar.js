@@ -92,7 +92,7 @@ function Navbar() {
             </ul>
         </div>
         <div className=''>
-            <Link to='/'><img className='w-44' src='/images/logoHeader.svg' alt='Monastery Logo'></img></Link>
+            <Link to='/'><img className='w-44' src='///cdn.shopify.com/s/files/1/0252/0173/7780/files/Logo_Monastery_Mesa_de_trabajo_1_400x.png?v=1612014887' alt='Monastery Logo'></img></Link>
         </div>
         <div className="items-center justify-center hidden sm:flex">
             <ul className="flex items-center justify-center ">
