@@ -13,7 +13,7 @@ function MetaverseKey() {
             <p className='text-white text-justify w-72 mx-auto pt-4' >The GYATSO NFT is going to be our genesis collection. The art you are receiving, specially designed by MST and RMA DESIGNS, will unlock all the perks mentioned here and more.</p>
             </div>
             <div className='flex justify-center'>
-                <video autoplay controls loop className='mb-8 w-[80vw] h-[60vh] mx-auto sm:mx-2 sm:mb-0 sm:w-[25vw] sm:h-[33vh]' >
+                <video autoplay controls poster='https://monastery-nft.s3.us-east-1.amazonaws.com/resources/THUMBNAILNFT.jpeg' loop className='mb-8 w-[80vw] h-[60vh] mx-auto sm:mx-2 sm:mb-0  sm:w-[25vw] sm:h-[33vh]' >
                     <source src="https://monastery-nft.s3.us-east-1.amazonaws.com/resources/MSTxRMA.mp4" width={250} height={200} type="video/mp4" />
                 </video>
             </div>

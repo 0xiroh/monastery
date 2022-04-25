@@ -6,7 +6,7 @@ import HeroText from './HeroText'
 function HeroDesktop() {
   return (
       <>
-        <div className='hidden w-[95vw] bg-[url("/public/images/fondo2.png")] items-center justify-around md:flex'>
+        <div className='hidden w-[80vw] bg-no-repeat bg-center bg-[url("/public/images/fondo2.png")] h-[70vh] items-center justify-around md:flex'>
             <div className='flex-col w-[40%]'>
                 <h1 className='leading-tight mt-14 font-[fontMstryTitle]  text-[5rem] text-white text-center'>
                     Gyatso NFT<br/> Collection x RMA
