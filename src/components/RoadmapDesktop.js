@@ -2,7 +2,7 @@ import React from 'react'
 
 function RoadmapDesktop() {
   return (
-    <div className='mt-20 hidden sm:block' id="roadmap">
+    <div className='mt-20 hidden sm:block' id="Roadmap">
         <h1 className='text-white text-5xl font-extrabold mb-6'>Roadmap</h1>
         <p className='text-white fon text-lg mb-16'>Once we hit a target sell through percentage, MST will deliver each goal.<br/> More news will deploy in the future.</p>
         <div className='flex'>

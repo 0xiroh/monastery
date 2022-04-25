@@ -7,15 +7,21 @@ function MetaverseKey() {
   return (
     <>
         <div className='flex-col my-16 justify-center items-center sm:grid sm:grid-cols-2 sm:gap-6'>
-            <h1 className='text-white text-4xl font-extrabold mb-10 sm:my-0'>This will be the key<br/> for the metaverse</h1>
+            <div className='flex flex-col justify-center items-center'>
+
+            <h1 className='text-white text-4xl font-extrabold mb-10 sm:my-0'>This will be the key for the metaverse</h1>
+            <p className='text-white text-justify w-72 mx-auto pt-4' >The GYATSO NFT is going to be our genesis collection. The art you are receiving, specially designed by MST and RMA DESIGNS, will unlock all the perks mentioned here and more.</p>
+            </div>
             <div className='flex justify-center'>
                 <video autoplay controls loop className='mb-8 w-[80vw] h-[60vh] mx-auto sm:mx-2 sm:mb-0 sm:w-[25vw] sm:h-[33vh]' >
                     <source src="https://monastery-nft.s3.us-east-1.amazonaws.com/resources/MSTxRMA.mp4" width={250} height={200} type="video/mp4" />
                 </video>
             </div>
-            <div className='flex-col sm:order-4 sm:mx-auto'>
-                <h1 className='text-white text-4xl block text-center font-extrabold my-20 sm:my-0'>Wear MST<br/> in the metaverse</h1>
-                <p className='text-white'>The Gyatso NFT is going to be our genesis</p>
+            <div className='flex-col py-10 sm:order-4 sm:mx-auto'>
+                <h1 className='text-white text-4xl block text-center font-extrabold myb-10 sm:my-0'>Wear MST<br/> in the metaverse</h1>
+                <p className='text-white text-justify w-72 mx-auto pt-4'>Wear our most iconic cap in the metaverse. 
+Holders will be airdropped with the GYATSO cap to be used in DECENTRALAND.
+Missions will be deployed in DECENTRALAND to unlock more perks.</p>
             </div>
             <div className="flex justify-center">
                 <section className="sombra w-88 h-[100%] flex-col sm:h-[vh] sm:w-[25vw] bg-[#2f2f2f] rounded-2xl">

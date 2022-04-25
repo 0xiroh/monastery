@@ -2,8 +2,8 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
     position: absolute;
-    width: 36px;
-    height: 30px;
+    width: 23px;
+    height: 17px;
     right: 12px;
     top: 36px;
   }

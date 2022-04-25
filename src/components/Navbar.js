@@ -70,7 +70,7 @@ function Navbar() {
   var snd = new Audio("https://mstry.s3.amazonaws.com/mstrTrimmed.mp3");
   const togglePlay = sound => sound.pause ? (sound.play() && console.log(sound.paused)) : (sound.pause() && console.log(sound.paused));
   return (
-    <nav class="flex max-w-[95vw] justify-center align-center items-center mt-4 sm:justify-around sm:mx-auto sm:mb-10">
+    <nav class="flex max-w-[95vw] justify-center align-center items-center mt-4 sm:justify-around sm:mx-auto sm:mb-10 static">
         <div className="items-center justify-center hidden sm:flex sm:ml-[-3%]">
             <ul className="flex items-center justify-center">
                 <li className="mx-4 cursor-pointer" onClick={() => togglePlay(snd)}>
@@ -79,10 +79,9 @@ function Navbar() {
                 <li className="mx-4 cursor-pointer" onClick={() => snd.pause()}>
                 <i class="fa-solid fa-pause text-white text-3xl" />
                 </li>
-                <li className="text-white mx-8">
-                    <a href="#roadmap" className="relative inline-block">
+                <li className="text-white ml-4">
+                    <a href="#Roadmap" className="relative inline-block">
                       <span>Roadmap</span>
-                      <span className="text-black absolute top-[-20px] right-[-50px] text-xs rounded-xl py-[5px] px-[10px] bg-[#B2FF97]">coming soon</span>
                     </a>
                 </li>
                 <li className="text-white mx-8">
