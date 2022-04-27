@@ -16,6 +16,7 @@ import MetaverseKey from './components/MetaverseKey';
 import RoadmapDesktop from './components/RoadmapDesktop';
 import RoadmapMobile from './components/RoadmapMobile';
 import Sidebar from './components/Sidebar';
+import Loading from './components/Loading';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <RoadmapMobile />
         <RoadmapDesktop />
         <Footer />
+        <Loading />
       </div>
     </div>
   );

@@ -1,12 +1,17 @@
 import { useEffect, useRef, useState } from "react"
 import { Link } from "react-router-dom";
+import { ethers } from 'ethers';
+import MstNFT from '../utils/MstNFT.json';
 import Sidebar from "./Sidebar";
+import { setLoadingMsg } from "../store";
+import { useGlobalState, getGlobalState, setGlobalState } from "../store";
 
 
     
 
 function Navbar() {
   const [isPaused, setIsPaused] = useState(true);
+
   const [currentAccount, setCurrentAccount] = useState("");
   
     const checkIfWalletIsConnected = async () => {
@@ -57,9 +62,45 @@ function Navbar() {
         }
     }
 
+
+
+    const askContractToMintNft = async () => {
+        const CONTRACT_ADDRESS = "0x780ce0f66FBD2f953C9A229d163551A83c4B0F6b";
+        setGlobalState('loading', { show: true, msg: 'Retrieving IPFS data...' })
+
+        try {
+            const { ethereum } = window;
+
+            if (ethereum) {
+                const provider = new ethers.providers.Web3Provider(ethereum);
+                const signer = provider.getSigner();
+                const contract = new ethers.Contract(CONTRACT_ADDRESS, MstNFT.abi, signer);
+                const connection = contract.connect(signer);
+                const addr = connection.address;
+                <h1>Minting NFT</h1>
+                console.log("Going to pop wallet now to pay gas...")
+                const result = await contract.mint({ value: ethers.utils.parseEther('0.069') });
+                const contract2 = await getGlobalState('contract')
+                setLoadingMsg('NFT minting in progress...')
+
+                console.log("Mining...please wait.")
+                await result.wait();
+                
+                console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${result.hash}`);
+                setLoadingMsg('Minting successful...')
+
+            } else {
+            console.log("Ethereum object doesn't exist!");
+            }
+        } catch (error) {
+            <div className="w-[50vw] h-[50vh] bg-white">Nopeeee</div>
+            console.log(error)
+        }
+    }
+
     // Render Methods
     const renderNotConnectedContainer = () => (
-        <button onClick={connectWallet} className="bg-primary font-bold rounded-lg py-2 px-4">
+        <button onClick={connectWallet} className="border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]">
         Connect Wallet
         </button>
     );
@@ -100,7 +141,13 @@ function Navbar() {
                     <img src="/images/Group 2268.svg" className="mr-3"></img>OpenSea</a>
                 </li>
                 <li className="mx-4">
-                  <button className='border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]' onClick={connectWallet}>Connect Wallet</button>
+                {currentAccount === "" ? (
+            renderNotConnectedContainer()
+          ) : (
+            <button onClick={askContractToMintNft} className="cta-button connect-wallet-button border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]">
+              Mint NFT
+            </button>)}
+                  {/*<button className='border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]' onClick={connectWallet}>Connect Wallet</button>*/}
                 </li>
             </ul>
         </div>
