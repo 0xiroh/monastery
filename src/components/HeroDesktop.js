@@ -7,12 +7,12 @@ function HeroDesktop() {
   return (
       <>
         <div className='hidden w-[100vw] bg-center  bg-[url("/public/images/fondo2.png")] items-center bg-cover h-[70vh] justify-center md:flex'>
-            <div className='flex-col w-[20%]'>
+            <div className='flex-col w-[30%]'>
                 {<img className='h-full w-full' src='./images/gyatsoRMA.png' />}
                 {/*<h1 className='leading-tight mt-14 font-[fontMstryTitle]  text-[5rem] text-white text-center'>
                     Gyatso NFT<br/> Collection x RMA
                 </h1>*/}
-                <p className='text-white mt-4 text-2xl text-center'>Our most Iconic Cap will be sold as an NFT </p>
+                <p className='text-white font-extrabold mt-4 text-4xl mb-10 text-center'>Our most Iconic Cap will be sold as an NFT </p>
                 <form className='mt-6 flex w-full'>
                     <input className='text-left pl-4 w-[60%] block mr-3' type='email' id='email' name='email' placeholder='Enter your email' />
                     <button type='submit' value='pirobo' className='w-[38%] font-bold h-10 bg-[#B2FF97]'> Get early access now</button>
