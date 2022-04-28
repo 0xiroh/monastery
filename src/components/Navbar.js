@@ -64,39 +64,39 @@ function Navbar() {
 
 
 
-    const askContractToMintNft = async () => {
-        const CONTRACT_ADDRESS = "0x780ce0f66FBD2f953C9A229d163551A83c4B0F6b";
-        setGlobalState('loading', { show: true, msg: 'Retrieving IPFS data...' })
+    // const askContractToMintNft = async () => {
+    //     const CONTRACT_ADDRESS = "0x780ce0f66FBD2f953C9A229d163551A83c4B0F6b";
+    //     setGlobalState('loading', { show: true, msg: 'Retrieving IPFS data...' })
 
-        try {
-            const { ethereum } = window;
+    //     try {
+    //         const { ethereum } = window;
 
-            if (ethereum) {
-                const provider = new ethers.providers.Web3Provider(ethereum);
-                const signer = provider.getSigner();
-                const contract = new ethers.Contract(CONTRACT_ADDRESS, MstNFT.abi, signer);
-                const connection = contract.connect(signer);
-                const addr = connection.address;
-                <h1>Minting NFT</h1>
-                console.log("Going to pop wallet now to pay gas...")
-                const result = await contract.mint({ value: ethers.utils.parseEther('0.069') });
-                const contract2 = await getGlobalState('contract')
-                setLoadingMsg('NFT minting in progress...')
+    //         if (ethereum) {
+    //             const provider = new ethers.providers.Web3Provider(ethereum);
+    //             const signer = provider.getSigner();
+    //             const contract = new ethers.Contract(CONTRACT_ADDRESS, MstNFT.abi, signer);
+    //             const connection = contract.connect(signer);
+    //             const addr = connection.address;
+    //             <h1>Minting NFT</h1>
+    //             console.log("Going to pop wallet now to pay gas...")
+    //             const result = await contract.mint({ value: ethers.utils.parseEther('0.069') });
+    //             const contract2 = await getGlobalState('contract')
+    //             setLoadingMsg('NFT minting in progress...')
 
-                console.log("Mining...please wait.")
-                await result.wait();
+    //             console.log("Mining...please wait.")
+    //             await result.wait();
                 
-                console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${result.hash}`);
-                setLoadingMsg('Minting successful...')
+    //             console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${result.hash}`);
+    //             setLoadingMsg('Minting successful...')
 
-            } else {
-            console.log("Ethereum object doesn't exist!");
-            }
-        } catch (error) {
-            <div className="w-[50vw] h-[50vh] bg-white">Nopeeee</div>
-            console.log(error)
-        }
-    }
+    //         } else {
+    //         console.log("Ethereum object doesn't exist!");
+    //         }
+    //     } catch (error) {
+    //         <div className="w-[50vw] h-[50vh] bg-white">Nopeeee</div>
+    //         console.log(error)
+    //     }
+    // }
 
     // Render Methods
     const renderNotConnectedContainer = () => (
@@ -144,8 +144,8 @@ function Navbar() {
                 {currentAccount === "" ? (
             renderNotConnectedContainer()
           ) : (
-            <button onClick={askContractToMintNft} className="cta-button connect-wallet-button border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]">
-              Mint NFT
+            <button onClick={null} className="cta-button connect-wallet-button border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]">
+              Connuiscted
             </button>)}
                   {/*<button className='border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]' onClick={connectWallet}>Connect Wallet</button>*/}
                 </li>
