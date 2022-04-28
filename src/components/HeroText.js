@@ -8,7 +8,7 @@ function HeroText() {
             Gyatso NFT<br/> Collection <br></br> x RMA
         </h1>} */}
         <img className='mr-6' src='./images/gyatsoRMA.png' />
-        <p className='text-white fontbol text-lg'>Our most Iconic Cap will be<br /> sold as an NFT </p>
+        <p className='text-white font-extrabold text-2xl mt-4'>Our most Iconic Cap will be<br /> sold as an NFT </p>
     </div>
   )
 }

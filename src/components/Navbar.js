@@ -145,7 +145,7 @@ function Navbar() {
             renderNotConnectedContainer()
           ) : (
             <button onClick={null} className="cta-button connect-wallet-button border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]">
-              Connuiscted
+              Connected
             </button>)}
                   {/*<button className='border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]' onClick={connectWallet}>Connect Wallet</button>*/}
                 </li>
