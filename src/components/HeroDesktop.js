@@ -6,11 +6,12 @@ import HeroText from './HeroText'
 function HeroDesktop() {
   return (
       <>
-        <div className='hidden w-[80vw] bg-no-repeat bg-center bg-[url("/public/images/fondo2.png")] h-[70vh] items-center justify-around md:flex'>
-            <div className='flex-col w-[40%]'>
-                <h1 className='leading-tight mt-14 font-[fontMstryTitle]  text-[5rem] text-white text-center'>
+        <div className='hidden w-[100vw] bg-center  bg-[url("/public/images/fondo2.png")] items-center bg-cover h-[70vh] justify-center md:flex'>
+            <div className='flex-col w-[20%]'>
+                {<img className='h-full w-full' src='./images/gyatsoRMA.png' />}
+                {/*<h1 className='leading-tight mt-14 font-[fontMstryTitle]  text-[5rem] text-white text-center'>
                     Gyatso NFT<br/> Collection x RMA
-                </h1>
+                </h1>*/}
                 <p className='text-white mt-4 text-2xl text-center'>Our most Iconic Cap will be sold as an NFT </p>
                 <form className='mt-6 flex w-full'>
                     <input className='text-left pl-4 w-[60%] block mr-3' type='email' id='email' name='email' placeholder='Enter your email' />
