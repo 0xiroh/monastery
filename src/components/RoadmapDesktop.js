@@ -21,10 +21,7 @@ function RoadmapDesktop() {
                 </li>
                 <li className='flex-col w-[12vw]'>
                     <h1 className=' bg-white font-extrabold text-2xl pt-11 block h-28 mb-3'>65%</h1> 
-                    <p className='text-white font-light text-md w-40 mx-auto text-justify'>Party with MST in Medellin ONLY for Gyatso NFT holders.
-
-Party the MST style , DJs , artists , models and more.
-</p>
+                    <p className='text-white font-light text-md w-40 mx-auto text-justify'>MST Convention<br/><br/>Network with MST in Medellin ONLY for Gyatso NFT holders.</p>
                 </li>
                 <li className='flex-col w-[12vw]'>
                     <h1 className=' bg-white font-extrabold text-2xl pt-11 block h-28 mb-3'>75%</h1> 

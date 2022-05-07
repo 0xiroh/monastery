@@ -137,7 +137,7 @@ function Navbar() {
         <div className="items-center justify-center hidden sm:flex">
             <ul className="flex items-center justify-center ">
                 <li className="mx-4">
-                  <a href="https://opensea.io/MONASTERY_GYATSO" className='border-solid flex items-center justify-center font-bold w-40 h-12 bg-[#2f2f2f] text-white'>
+                  <a href="https://opensea.io/Monastery_NFT" className='border-solid flex items-center justify-center font-bold w-40 h-12 bg-[#2f2f2f] text-white'>
                     <img src="/images/Group 2268.svg" className="mr-3"></img>OpenSea</a>
                 </li>
                 <li className="mx-4">

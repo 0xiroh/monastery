@@ -21,7 +21,7 @@ function RoadmapMobile() {
             </div>
             <div className="flex-col">
                 <h1 className=' bg-white align-middle pt-[10%] font-extrabold text-2xl  block h-24'>65%</h1>   
-                <p className='block h-40 px-4  text-white mb-14 border-2 border-white pt-[6%]'>Party with MST in Medellin ONLY for Gyatso NFT holders. <br/><br/>Party the MST style , DJs , artists , models and more.</p>
+                <p className='block h-40 px-4  text-white mb-14 border-2 border-white pt-[6%]'>MST Convention<br/><br/>Network with MST in Medellin ONLY for Gyatso NFT holders.</p>
             </div>
             <div className="flex-col">
                 <h1 className=' bg-white align-middle pt-[10%] font-extrabold text-2xl  block h-24'>75%</h1>   
