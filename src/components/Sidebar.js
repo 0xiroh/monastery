@@ -22,7 +22,7 @@ export default props => {
                 <hr className='w-[150%] mb-4 ml-[-15vw]'/>
                 
             </ul>
-            <div className='h-[50vh]'/>
+            <div className='h-[40vh]'/>
             <ul className="flex align-bottom">
               <hr className='w-[150%] mb-4 ml-[-15vw]'/>
               <li className="mx-4">

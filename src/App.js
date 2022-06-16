@@ -17,13 +17,16 @@ import RoadmapDesktop from './components/RoadmapDesktop';
 import RoadmapMobile from './components/RoadmapMobile';
 import Sidebar from './components/Sidebar';
 import Loading from './components/Loading';
+import Faqs from './components/Faqs';
+import FQ from './components/FQ';
+import CollectionRMA from './components/CollectionRMA';
+import HowToBuyMobile from './components/HowToBuyMobile';
 
 function App() {
   return (
     <div className="App">
       <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"}/>
       <div id='page-wrap'>
-
         <Navbar />
         <HeroDesktop />
         <HeroText />
@@ -34,9 +37,15 @@ function App() {
         <Chakra/>
         <MetaverseKey />
         <Chakra />
+        <CollectionRMA />
+        <Chakra/>
         <HowToBuy />
         <RoadmapMobile />
         <RoadmapDesktop />
+        <FQ/>
+        <Chakra/>
+        <HowToBuyMobile />
+        <hr className='mt-40'></hr>
         <Footer />
         <Loading />
       </div>
