@@ -15,7 +15,7 @@ function Footer() {
                       <li className="text-white text-lg mb-2 font-bold">Company</li>
                       <li className="text-white hover:underline cursor-pointer"><Link to="/terms">{`Terms & Conditions`}</Link></li>
                       <li className="text-white hover:underline cursor-pointer"><a href="https://monasteryclothing.com/pages/declaracion-de-privacidad">Privacy Policy</a></li>
-                      <li className="display-none"> x</li>
+                      <br></br>
                   </ul>
               </section>
               <section>

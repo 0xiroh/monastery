@@ -9,8 +9,8 @@ import { useGlobalState, getGlobalState, setGlobalState } from "../store";
 
     
 
-function Navbar() {
-  const [isPaused, setIsPaused] = useState(true);
+function Navbar(props) {
+  //const [isPaused, setIsPaused] = useState(true);
 
   const [currentAccount, setCurrentAccount] = useState("");
   
@@ -64,55 +64,55 @@ function Navbar() {
 
 
 
-    // const askContractToMintNft = async () => {
-    //     const CONTRACT_ADDRESS = "0x780ce0f66FBD2f953C9A229d163551A83c4B0F6b";
-    //     setGlobalState('loading', { show: true, msg: 'Retrieving IPFS data...' })
+    const askContractToMintNft = async () => {
+        const CONTRACT_ADDRESS = "0x780ce0f66FBD2f953C9A229d163551A83c4B0F6b";
+        setGlobalState('loading', { show: true, msg: 'Retrieving IPFS data...' })
 
-    //     try {
-    //         const { ethereum } = window;
+        try {
+            const { ethereum } = window;
 
-    //         if (ethereum) {
-    //             const provider = new ethers.providers.Web3Provider(ethereum);
-    //             const signer = provider.getSigner();
-    //             const contract = new ethers.Contract(CONTRACT_ADDRESS, MstNFT.abi, signer);
-    //             const connection = contract.connect(signer);
-    //             const addr = connection.address;
-    //             <h1>Minting NFT</h1>
-    //             console.log("Going to pop wallet now to pay gas...")
-    //             const result = await contract.mint({ value: ethers.utils.parseEther('0.15') });
-    //             const contract2 = await getGlobalState('contract')
-    //             setLoadingMsg('NFT minting in progress...')
+            if (ethereum) {
+                const provider = new ethers.providers.Web3Provider(ethereum);
+                const signer = provider.getSigner();
+                const contract = new ethers.Contract(CONTRACT_ADDRESS, MstNFT.abi, signer);
+                const connection = contract.connect(signer);
+                const addr = connection.address;
+                <h1>Minting NFT</h1>
+                console.log("Going to pop wallet now to pay gas...")
+                const result = await contract.payToMint(2, { value: ethers.utils.parseEther('0.15') });
+                const contract2 = await getGlobalState('contract')
+                setLoadingMsg('NFT minting in progress...')
 
-    //             console.log("Mining...please wait.")
-    //             await result.wait();
+                console.log("Mining...please wait.")
+                await result.wait();
                 
-    //             console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${result.hash}`);
-    //             setLoadingMsg('Minting successful...')
+                console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${result.hash}`);
+                setLoadingMsg('Minting successful...')
 
-    //         } else {
-    //         console.log("Ethereum object doesn't exist!");
-    //         }
-    //     } catch (error) {
-    //         <div className="w-[50vw] h-[50vh] bg-white">Nopeeee</div>
-    //         console.log(error)
-    //     }
-    // }
+            } else {
+            console.log("Ethereum object doesn't exist!");
+            }
+        } catch (error) {
+            <div className="w-[50vw] h-[50vh] bg-white">Nopeeee</div>
+            console.log(error)
+        }
+    }
 
     // Render Methods
     const renderNotConnectedContainer = () => (
-        <button onClick={connectWallet} className="border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]">
+        <button onClick={props.cWallet} className="border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]">
         Connect Wallet
         </button>
     );
     useEffect(() => {
-        checkIfWalletIsConnected();
+        props.checkWallet();
     }, [])
 
   var snd = new Audio("https://mstry.s3.amazonaws.com/mstrTrimmed.mp3");
   const togglePlay = sound => sound.pause ? (sound.play() && console.log(sound.paused)) : (sound.pause() && console.log(sound.paused));
   return (
     <nav class="flex max-w-[95vw] justify-center align-center items-center mt-4 sm:justify-around sm:mx-auto sm:mb-10 static">
-        <div className="items-center justify-center hidden sm:flex sm:ml-[-3%]">
+        <div className="items-center justify-center hidden md:flex md:ml-[-3%]">
             <ul className="flex items-center justify-center">
                 <li className="mx-4 cursor-pointer" onClick={() => togglePlay(snd)}>
                 <img src="images/playButton.png" className="" />
@@ -134,18 +134,18 @@ function Navbar() {
         <div className=''>
             <Link to='/'><img className='w-44' src='///cdn.shopify.com/s/files/1/0252/0173/7780/files/Logo_Monastery_Mesa_de_trabajo_1_400x.png?v=1612014887' alt='Monastery Logo'></img></Link>
         </div>
-        <div className="items-center justify-center hidden sm:flex">
+        <div className="items-center justify-center hidden md:flex">
             <ul className="flex items-center justify-center ">
                 <li className="mx-4">
                   <a href="https://opensea.io/Monastery_NFT" className='border-solid flex items-center justify-center font-bold w-40 h-12 bg-[#2f2f2f] text-white'>
                     <img src="/images/Group 2268.svg" className="mr-3"></img>OpenSea</a>
                 </li>
                 <li className="mx-4">
-                {currentAccount === "" ? (
+                {props.cA === "" ? (
             renderNotConnectedContainer()
           ) : (
-            <button onClick={null} className="cta-button connect-wallet-button border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]">
-              Connected
+            <button onClick={askContractToMintNft} className="cta-button connect-wallet-button border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]">
+              Mint NFT
             </button>)}
                   {/*<button className='border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]' onClick={connectWallet}>Connect Wallet</button>*/}
                 </li>

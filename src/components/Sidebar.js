@@ -1,9 +1,18 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import './Sidebar.css'
 
 export default props => {
+  const renderNotConnectedContainer = () => (
+      <button onClick={props.cWallet} className="border-solid bg-[#b2ff97] text-black w-40 h-12 border-2 border-[#B2FF97]">
+      Connect Wallet
+      </button>
+  );
+  useEffect(() => {
+      props.checkWallet();
+  }, [])
   return (
+    
     <Menu {...props}>
             <img src="./images/logoBlack.png" className="mt-[-5vh] mx-auto"/>
             <ul className="flex-col items-center justify-center gap-5">
@@ -30,7 +39,12 @@ export default props => {
                   <img src="/images/Group 2268.svg" className="mx-3 my-4"></img>OpenSea</a>
               </li>
               <li className="mx-4 my-4">
-                <button className='border-solid bg-[#B2FF97] text-black w-40 h-12 border-2 border-[#B2FF97]'>Connect Wallet</button>
+              {props.cA === "" ? (
+            renderNotConnectedContainer()
+          ) : (
+            <button onClick={props.mint} className="cta-button connect-wallet-button border-solid text-black w-40 bg-[#b2ff97] h-12 border-2 border-[#B2FF97]">
+              Mint NFT
+            </button>)}
               </li>
             </ul>
     </Menu>

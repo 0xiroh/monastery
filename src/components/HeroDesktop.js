@@ -2,8 +2,11 @@ import React from 'react'
 import ReactPlayer from 'react-player'
 import CallToAction from './CallToAction'
 import HeroText from './HeroText'
+import Mint from './Mint'
+import { useTranslation } from 'react-i18next'
 
-function HeroDesktop() {
+function HeroDesktop(props) {
+    const { t } = useTranslation();
   return (
       <>
         <div className='hidden w-[100vw] bg-center  bg-[url("/public/images/fondo2.png")] items-center bg-cover h-[70vh] justify-center md:flex'>
@@ -14,11 +17,12 @@ function HeroDesktop() {
                 </h1>*/}
 
                 
-                <p className='text-white font-extrabold mt-4 text-4xl mb-10 text-center'>Our most Iconic Cap will be sold as an NFT </p>
-                <form action="https://monasterynft.us8.list-manage.com/subscribe/post?u=f7008c544caa2ef5d5d99950e&amp;id=bd15e4e84a" method="post" className='mt-6 flex w-full'>
-                    <input className='text-left pl-4 w-[60%] block mr-3' type='email' id='email' name='email' placeholder='Enter your email' />
-                    <button type='submit' className='w-[38%] font-bold h-10 bg-[#B2FF97]'> Get early access now</button>
+                <p className={props.cA ? 'hidden' : 'text-white font-extrabold mt-4 text-4xl mb-10 text-center'}>{t('heroText')}</p>
+                <form action="https://monasterynft.us8.list-manage.com/subscribe/post?u=f7008c544caa2ef5d5d99950e&amp;id=bd15e4e84a" method="post" className={props.cA ? 'hidden' : 'mt-6 flex w-full'}>
+                    <input className='text-left pl-4 w-[20vw] block mr-3' type='email' id='email' name='email' placeholder='Enter your email' />
+                    <button type='submit' className='w-[20vw] font-bold h-10 bg-[#B2FF97]'> Get early access now</button>
                 </form>
+                <Mint cA={props.cA} />
                 <br></br>
                 <br></br>
                 <br></br>

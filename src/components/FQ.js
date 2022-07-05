@@ -17,10 +17,10 @@ The MetaMask wallet is available as a browser extension or as a mobile app.
 "/>
         <Faqs q="6.	What are the fees for a transaction?" a="The blockchain fee also called the miners' fee is a blockchain transaction fee that is charged to users when performing any transaction using a specific blockchain. The fee is proportional to the number of transactions at any given moment, that’s why, during times of heavy use of the Ethereum blockchain, these fees can be higher than in times of low use. Because of this, please note that you must always have enough balance (ETH) in your MetaMask wallet to cover the transaction (price) and the fee associated with it."/>
         <Faqs q="7.	Where can I see the previous work of RMA?" a={<div>You can check Alejandros portfolio, including his NFT designs, on his official website: <Link className='text-[#B2FF97]' to="https://www.rmadesign.tv/">rmadesign.tv</Link></div>}/>
-        <Faqs q=". What’s the price of the Gyatso NFT cap?" a="400 USD$"/>
-        <Faqs q=". When is the sale of the Gyatso NFT cap?" a="The sale will be on the fourth week of June 2022 on monasterynft.com."/>
-        <Faqs q=". How many Gyatso NFT’s can I buy?" a="Each wallet can mint a maximum of 6 Gyatsos caps."/>
-        <Faqs q=". What are the benefits of owning a Gyatso Cap?" a="Five pieces of MONASTERY clothing. Two NFTs, one for Decentraland and one from the RMA Collection. Also, as part of the lavish MST lifestyle, two exclusive parties will welcome the VIP Gyatso holders to the MONASTERY World.
+        <Faqs q="8. What’s the price of the Gyatso NFT cap?" a="400 USD$"/>
+        <Faqs q="9. When is the sale of the Gyatso NFT cap?" a="The sale will be on the fourth week of June 2022 on monasterynft.com."/>
+        <Faqs q="10. How many Gyatso NFT’s can I buy?" a="Each wallet can mint a maximum of 6 Gyatsos caps."/>
+        <Faqs q="11. What are the benefits of owning a Gyatso Cap?" a="Five pieces of MONASTERY clothing. Two NFTs, one for Decentraland and one from the RMA Collection. Also, as part of the lavish MST lifestyle, two exclusive parties will welcome the VIP Gyatso holders to the MONASTERY World.
 
 1.	(20%) The physical Gyatso cap and its equivalent NFT in the Decentraland metaverse (MANA).
 2.	(35%) Claim 3 extra items of exclusive MST merchandise.
@@ -32,7 +32,7 @@ Only for the Gytaso holders.
 7.	(95%) Become eligible for Monastery Avatars and MST tokenization.
 8.	(100%) Exclusive entry to the Monastery Festival. This will be a festival in Cartagena, Colombia, with a concert on a private beach, a big party, models, fun, VIP artists, and of course, only for Gyatso NFT holders.
 "/>
-        <Faqs q=". Where can I sell my Gyatso NFT?" a="At any NFT marketplace that supports Ethereum, such as OpenSea, Rarible or LooksRare."/>
+        <Faqs q="12. Where can I sell my Gyatso NFT?" a="At any NFT marketplace that supports Ethereum, such as OpenSea, Rarible or LooksRare."/>
     </div>
   )
 }

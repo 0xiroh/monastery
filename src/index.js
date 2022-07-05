@@ -5,6 +5,7 @@ import App from './App';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Terms from './views/Terms';
 import ScrollToTop from './components/ScrollToTop';
+import './i18n';
 
 ReactDOM.render(
   <React.StrictMode>

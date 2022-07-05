@@ -23,8 +23,8 @@ function MetaverseKey() {
                     Holders will be airdropped with the GYATSO cap to be used in DECENTRALAND.
                     Missions will be deployed in DECENTRALAND to unlock more perks.</p>
             </div>
-            <div className="flex justify-center sm:order-4 sm:mr-40">
-                <section className="sombra w-88 h-[100%] flex-col sm:h-[vh] sm:w-[25vw] bg-[#2f2f2f] rounded-2xl">
+            <div className="flex justify-center sm:order-4 md:mr-40">
+                <section className="sombra w-88 h-[100%] flex-col sm:h-[vh] sm:w-[20vw] bg-[#2f2f2f] rounded-2xl">
                     <div className="flex justify-flex-start items-center mt-5 mx-auto">
                         <img src="https://cdn.cdnlogo.com/logos/d/92/decentraland.svg" className="h-16"/>
                         <div class="flex-col items-center justify-center">

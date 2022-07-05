@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 function Terms() {
   return (
     <div className="Terms text-white">
-      <Navbar />
+      
       <h1 className='text-6xl font-bold'>TERMS {'&'} CONDITIONS</h1>
       <h4>Posted March 23/22</h4>
 
