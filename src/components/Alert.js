@@ -26,7 +26,7 @@ const Alert = () => {
           <BsCheck2Circle className="text-green-600 text-4xl" />
         )}
         <p className="text-white my-3">{alert.msg}</p>
-        <button onClick={closeNav}>close</button>
+        <button className="cta-button my-4 connect-wallet-button border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]" onClick={closeNav}>Close</button>
       </div>
     </div>
   )
