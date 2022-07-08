@@ -39,7 +39,7 @@ export default props => {
                   <img src="/images/Group 2268.svg" className="mx-3 my-4"></img>OpenSea</a>
               </li>
               <li className="mx-4 my-4">
-              {props.cA === "" ? (
+              {!props.cA ? (
             renderNotConnectedContainer()
           ) : (
             <button className="cta-button connect-wallet-button border-solid text-black w-40 bg-[#b2ff97] h-12 border-2 border-[#B2FF97]">
