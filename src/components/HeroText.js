@@ -9,7 +9,6 @@ function HeroText(props) {
         </h1>} */}
         <img className='mr-6' src='./images/gyatsoRMA.png' />
         <p className={props.cA ? 'hidden' : 'text-white font-extrabold text-2xl mt-4'}>Our most Iconic Cap will be<br /> sold as an NFT </p>
-        <p className={!props.cA ? 'hidden' : 'text-white font-extrabold text-2xl mt-4'}>{props.cA}</p>
     </div>
   )
 }

@@ -317,8 +317,8 @@ function App() {
         {console.log('account', account)}
         <HeroDesktop cA={address} pA={providerWeb3} />
         <HeroText cA={account} cW={modalConnect} />
-        <MintMobile cA={address} pA={providerWeb3} />
-        <CallToAction cA={address} />
+        <MintMobile cA={account} pA={providerWeb3} />
+        <CallToAction cA={account} />
         <MobileVideo />
         <PerksDesktop />
         <Perks />
