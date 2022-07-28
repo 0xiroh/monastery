@@ -1,40 +1,46 @@
-
 import { useGlobalState, getGlobalState, setGlobalState } from "./store/index";
 import './App.css';
-import CallToAction from './components/CallToAction';
-import HeroText from './components/HeroText';
-import Navbar from './components/Navbar';
-import Perks from './components/Perks';
-import ReactPlayer from 'react-player'
-import Nifty from './components/Nifty';
-import Cap from './components/Cap';
-import HowToBuy from './components/HowToBuy';
-import Chakra from './components/Chakra';
-import PerksDesktop from './components/PerksDesktop';
-import HeroDesktop from './components/HeroDesktop';
-import Footer from './components/Footer';
 import { setLoadingMsg } from "./store";
-import MobileVideo from './components/MobileVideo';
-import MetaverseKey from './components/MetaverseKey';
-import RoadmapDesktop from './components/RoadmapDesktop';
-import RoadmapMobile from './components/RoadmapMobile';
-import Sidebar from './components/Sidebar';
-import Loading from './components/Loading';
-import Faqs from './components/Faqs';
-import FQ from './components/FQ';
-import CollectionRMA from './components/CollectionRMA';
-import HowToBuyMobile from './components/HowToBuyMobile';
-import Mint from './components/Mint';
 import { useState, useEffect } from 'react';
 import { ethers, providers } from 'ethers';
-import MstNFT from './utils/MstNFT.json';
-import BuyButton from "./components/BuyButton";
-import Alert from "./components/Alert";
-import MintMobile from "./components/MintMobile";
 import { networkParams } from "./networks";
 import { toHex, truncateAddress } from "./utils";
 import Web3Modal from "web3modal";
 import { providerOptions } from "./providerOptions";
+import React, { lazy } from "react";
+import MstNFT from './utils/MstNFT.json';
+import ReactPlayer from 'react-player';
+
+const MetaverseKey = lazy(() => import('./components/MetaverseKey'));
+const CallToAction = lazy(() => import('./components/CallToAction'));
+const HeroText = lazy(() => import('./components/HeroText'));
+const Navbar = lazy(() => import('./components/Navbar'));
+const Perks = lazy(() => import('./components/Perks'));
+const Nifty = lazy(() => import('./components/Nifty'));
+const Cap = lazy(() => import('./components/Cap'));
+const HowToBuy = lazy(() => import('./components/HowToBuy'));
+const Chakra = lazy(() => import('./components/Chakra'));
+const PerksDesktop = lazy(() => import('./components/PerksDesktop'));
+const Footer = lazy(() => import('./components/Footer'));
+const MobileVideo = lazy(() => import('./components/MobileVideo'));
+const RoadmapDesktop = lazy(() => import('./components/RoadmapDesktop'));
+const RoadmapMobile = lazy(() => import('./components/RoadmapMobile'));
+const Sidebar = lazy(() => import('./components/Sidebar'));
+const Loading = lazy(() => import('./components/Loading'));
+const Faqs = lazy(() => import('./components/Faqs'));
+const FQ = lazy(() => import('./components/FQ'));
+const CollectionRMA = lazy(() => import('./components/CollectionRMA'));
+const HowToBuyMobile = lazy(() => import('./components/HowToBuyMobile'));
+const Mint = lazy(() => import('./components/Mint'));
+const BuyButton = lazy(() => import('./components/BuyButton'));
+const Alert = lazy(() => import('./components/Alert'));
+
+
+
+const HeroDesktop = lazy(() => import('./components/HeroDesktop'));
+
+const MintMobile = lazy(() => import('./components/MintMobile'));
+
 
 const web3Modal = new Web3Modal({
   cacheProvider: false, // optional
