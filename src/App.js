@@ -314,7 +314,6 @@ function App() {
       <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} cA={address} cWallet={modalConnect} checkWallet={checkIfWalletIsConnected} mint={askContractToMintNft} />
       <div id='page-wrap'>
         <Navbar cA={address} cWallet={modalConnect} checkWallet={checkIfWalletIsConnected}  />
-        {console.log('account', account)}
         <HeroDesktop cA={address} pA={providerWeb3} />
         <HeroText cA={account} cW={modalConnect} />
         <MintMobile cA={account} pA={providerWeb3} />
