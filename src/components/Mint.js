@@ -17,6 +17,7 @@ function Mint(props) {
   }
 
   const askContractToMintNft = async () => {
+    console.log(props.pA);
     const CONTRACT_ADDRESS = "0x780ce0f66FBD2f953C9A229d163551A83c4B0F6b";
     setGlobalState('loading', { show: true, msg: 'Retrieving IPFS data...' })
 

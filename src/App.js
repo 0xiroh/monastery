@@ -311,7 +311,7 @@ function App() {
 
   return (
     <div className="App">
-      <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} cA={account} cWallet={mobileConnect} checkWallet={checkIfWalletIsConnected} mint={askContractToMintNft} />
+      <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} cA={address} cWallet={modalConnect} checkWallet={checkIfWalletIsConnected} mint={askContractToMintNft} />
       <div id='page-wrap'>
         <Navbar cA={address} cWallet={modalConnect} checkWallet={checkIfWalletIsConnected}  />
         {console.log('account', account)}
