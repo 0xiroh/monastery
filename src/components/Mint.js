@@ -24,8 +24,8 @@ function Mint(props) {
         const { ethereum } = window;
 
         if (ethereum) {
-            const provider = new ethers.providers.Web3Provider(ethereum);
-            const signer = provider.getSigner();
+            // const provider = new ethers.providers.Web3Provider(ethereum);
+            const signer = props.pA.getSigner();
             const contract = new ethers.Contract(CONTRACT_ADDRESS, MstNFT.abi, signer);
             const connection = contract.connect(signer);
             setLoadingMsg('NFT minting in progress...')

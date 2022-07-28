@@ -4,7 +4,7 @@ import Mint from './Mint'
 function MintMobile(props) {
   return (
     <div className='block md:hidden'>
-        <Mint cA={props.cA}/>
+        <Mint cA={props.cA} pA={props.pA}/>
     </div>
   )
 }

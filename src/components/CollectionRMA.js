@@ -2,8 +2,10 @@ import React from 'react'
 import Cap from './Cap'
 import Chakra from './Chakra'
 import Nifty from './Nifty'
+import { useTranslation, Trans } from 'react-i18next';
 
 function CollectionRMA() {
+    const { t } = useTranslation();
   return (
     <>
         <div className='grid my-16 justify-center items-center md:grid md:grid-cols-2 md:gap-3'>
@@ -18,14 +20,12 @@ function CollectionRMA() {
             </div>
             <div className='flex flex-col order-1 justify-center items-center'>
 
-            <h1 className='text-white text-4xl font-extrabold mb-10 md:my-0'>About the collection</h1>
-            <p className='text-white text-justify w-72 md:w-[16vw] mx-auto pt-4' >The GYATSO NFT is going to be our genesis collection. The art you are receiving, specially designed by MST and RMA, it will unlock all the perks mentioned here and more.</p>
+            <h1 className='text-white text-4xl font-extrabold mb-10 md:my-0'><Trans i18nKey="aboutTitle"></Trans></h1>
+            <p className='text-white text-justify w-72 md:w-[16vw] mx-auto pt-4' >{t('aboutDescription')}</p>
             </div>
             <div className='flex mt-12 md:mt-0 flex-col order-3 justify-center items-center'>
-                <h1 className='text-white text-4xl block text-center font-extrabold myb-10 md:my-0'>About<br/>RMA</h1>
-                <p className='text-white text-justify w-72 md:w-[20vw] mx-auto pt-4'>
-                    RMA is Alejandro Robledo, a vfx artists aNd designer with 10+ years of experience. RMA's art is built upon technical and artistic excellence. Some of his clients include Marvel, Paramount Pictures, Legendary, Apple, Netflix, HBO and MTV. His work has been featured on major films including; Transformes, Xmen, Jumanji, ChangChi and Iron Fist. He created and directed Malumas world tour and has created artwork for major celebrities including; Dj Khaled, Miley Cirus, Ludacris, Chainsmokers, Madonna, Katy Perry, Rhianna, Bruna Mars, Kendrick Lamar and others. RMA's work translated seamlesly into the NFT world. Creating powerful collaborations with Maluma, Tamara Delempicka and Monastery. His work can be seen at www.rmadesign.tv
-                </p>
+                <h1 className='text-white text-4xl block text-center font-extrabold myb-10 md:my-0'><Trans i18nKey="aboutRmaTitle"></Trans></h1>
+                <p className='text-white text-justify w-72 md:w-[20vw] mx-auto pt-4'>{t('aboutRmaDescription')}</p>
             </div>
         </div>
     </>

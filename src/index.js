@@ -9,15 +9,17 @@ import './i18n';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <ScrollToTop>
-        <Routes>
-          <Route path='/' element={<App />} />
-          <Route path='/terms' element={<Terms />} />
-        </Routes>
-      </ScrollToTop>
-    
-    </BrowserRouter>
+    <React.Suspense fallback="loading">
+      <BrowserRouter>
+        <ScrollToTop>
+          <Routes>
+            <Route path='/' element={<App />} />
+            <Route path='/terms' element={<Terms />} />
+          </Routes>
+        </ScrollToTop>
+      
+      </BrowserRouter>
+    </React.Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -3,7 +3,12 @@ import ReactPlayer from 'react-player'
 import CallToAction from './CallToAction'
 import HeroText from './HeroText'
 import Mint from './Mint'
-import { useTranslation } from 'react-i18next'
+import { useTranslation, Trans } from 'react-i18next'
+
+const lngs = {
+    en: {nativeName: 'English', flag: '🇺🇸'},
+    es: {nativeName: 'Spanish', flag: '🇪🇸'},
+}
 
 function HeroDesktop(props) {
     const { t } = useTranslation();
@@ -22,7 +27,7 @@ function HeroDesktop(props) {
                     <input className='text-left pl-4 w-[20vw] block mr-3' type='email' id='email' name='email' placeholder='Enter your email' />
                     <button type='submit' className='w-[20vw] font-bold h-10 bg-[#B2FF97]'> Get early access now</button>
                 </form>
-                <Mint cA={props.cA} />
+                <Mint cA={props.cA} pA={props.pA} />
                 <br></br>
                 <br></br>
                 <br></br>
@@ -30,7 +35,11 @@ function HeroDesktop(props) {
         </div>
         <div className='hidden md:block'>
             <div className='h-20'/>
-            <h1 className='text-white text-[3rem] mb-8 font-extrabold'>Get to experience <br></br> the MST lifestyle</h1>
+            <h1 className='text-white text-[3rem] mb-8 font-extrabold'>
+                <Trans i18nKey="title2">
+                    Get to experience <br></br> the MST lifestyle
+                </Trans>
+            </h1>
             <div className='h-20'/>
             <div className='flex justify-center'>
                 <ReactPlayer className='' width={800} height={450} style={{ margin: '' }}  light='' controls url='/videos/oculus.mp4'/>

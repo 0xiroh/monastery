@@ -10,7 +10,7 @@ export default props => {
   );
   useEffect(() => {
       props.checkWallet();
-  }, [])
+  }, [renderNotConnectedContainer])
   return (
     
     <Menu {...props}>

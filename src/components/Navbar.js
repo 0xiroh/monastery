@@ -5,6 +5,7 @@ import MstNFT from '../utils/MstNFT.json';
 import Sidebar from "./Sidebar";
 import { setLoadingMsg } from "../store";
 import { useGlobalState, getGlobalState, setGlobalState } from "../store";
+import { useTranslation, Trans } from 'react-i18next'
 
 
     
@@ -73,7 +74,7 @@ function Navbar(props) {
 
             if (ethereum) {
                 const provider = new ethers.providers.Web3Provider(ethereum);
-                const signer = provider.getSigner();
+                const signer = props.cA.getSigner();
                 const contract = new ethers.Contract(CONTRACT_ADDRESS, MstNFT.abi, signer);
                 const connection = contract.connect(signer);
                 const addr = connection.address;
@@ -109,11 +110,23 @@ function Navbar(props) {
     }, [])
 
   var snd = new Audio("https://mstry.s3.amazonaws.com/mstrTrimmed.mp3");
+  
+
+    const lngs = {
+        en: {nativeName: 'English', flag: '🇺🇸'},
+        es: {nativeName: 'Spanish', flag: '🇪🇸'},
+    }
+    const { t, i18n } = useTranslation();
   const togglePlay = sound => sound.pause ? (sound.play() && console.log(sound.paused)) : (sound.pause() && console.log(sound.paused));
   return (
     <nav class="flex max-w-[95vw] justify-center align-center items-center mt-4 sm:justify-around sm:mx-auto sm:mb-10 static">
         <div className="items-center justify-center hidden md:flex md:ml-[-3%]">
             <ul className="flex items-center justify-center">
+                <li>
+                    {Object.keys(lngs).map(lng => (
+                        <button type="submit" key={lng} onClick={() => i18n.changeLanguage(lng)} disabled={i18n.resolvedLanguage === lng}> {lngs[lng].flag} </button>
+                    ))}
+                </li>
                 <li className="mx-4 cursor-pointer" onClick={() => togglePlay(snd)}>
                 <img src="images/playButton.png" className="" />
                 </li>
