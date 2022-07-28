@@ -6,6 +6,7 @@ import { useTranslation, Trans } from 'react-i18next'
 
 function MetaverseKey() {
     const { t } = useTranslation();
+    const url = "https://monastery-nft.s3.amazonaws.com/resources/nohair.gltf"
   return (
     <>
         <div className='flex-col my-16 justify-center items-center sm:grid sm:grid-cols-2 sm:gap-6'>

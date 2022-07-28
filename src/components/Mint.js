@@ -24,7 +24,7 @@ function Mint(props) {
     try {
         const { ethereum } = window;
 
-        if (ethereum) {
+        if (props.cA) {
             // const provider = new ethers.providers.Web3Provider(ethereum);
             const signer = props.pA.getSigner();
             const contract = new ethers.Contract(CONTRACT_ADDRESS, MstNFT.abi, signer);
