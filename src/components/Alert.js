@@ -1,6 +1,7 @@
 import { useGlobalState } from '../store'
-import { FaRegTimesCircle } from 'react-icons/fa'
-import { BsCheck2Circle } from 'react-icons/bs'
+import { Icon } from 'react-icons-kit';
+import { ic_check_circle_outline } from 'react-icons-kit/md/ic_check_circle_outline';
+import { ic_error_outline_outline } from 'react-icons-kit/md/ic_error_outline_outline';
 
 const Alert = () => {
   const [alert] = useGlobalState('alert')
@@ -21,9 +22,9 @@ const Alert = () => {
         min-w-min py-3 px-10"
       >
         {alert.color == 'red' ? (
-          <FaRegTimesCircle className="text-red-600 text-4xl" />
+          <Icon icon={ic_error_outline_outline} className="text-red-600 text-4xl" />
         ) : (
-          <BsCheck2Circle className="text-green-600 text-4xl" />
+          <Icon icon={ic_check_circle_outline} className="text-green-600 text-4xl" />
         )}
         <p className="text-white my-3">{alert.msg}</p>
         <button className="cta-button my-4 connect-wallet-button border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]" onClick={closeNav}>Close</button>

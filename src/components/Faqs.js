@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Faqs.css";
-import { FiPlus } from "react-icons/fi";
+import { Icon } from "react-icons-kit";
+import { plus } from "react-icons-kit/ikons/plus";
 
   
 
@@ -29,9 +30,7 @@ function Faqs(props) {
                 <h4 className="question-style">
                   {props.q}
                 </h4>
-                <FiPlus
-                  className={active ? `question-icon rotate` : `question-icon`}
-                />
+                <Icon icon={plus} className={active ? `question-icon rotate` : `question-icon`}/>
               </div>
               <div
                 ref={contentRef}

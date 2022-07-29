@@ -12,7 +12,7 @@ function CollectionRMA() {
             <div className='row-span-2 mx-auto order-2 md:order-1'>
                 <a href="https://rmadesign.tv">
 
-                <img src="images/rma2.png" className='md:ml-40 md:w-[25vw] w-80 my-8'/>
+                <img src="https://monastery-nft.s3.amazonaws.com/resources/rma2.webp" className='md:ml-40 md:w-[25vw] w-80 my-8'/>
                 </a>
                 {/* <video autoplay controls poster='https://monastery-nft.s3.us-east-1.amazonaws.com/resources/THUMBNAILNFT.jpeg' loop className='mb-8 w-[80vw] h-[60vh] mx-auto sm:mx-2 sm:mb-0  sm:w-[25vw] sm:h-[33vh]'>
                     <source src="https://monastery-nft.s3.us-east-1.amazonaws.com/resources/rma.mp4" type="video/mp4" />
