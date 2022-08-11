@@ -336,8 +336,8 @@ function App() {
         <RoadmapDesktop />
         <FQ/>
         <Chakra/>
-        <HowToBuy />
-        <HowToBuyMobile />
+        {/* <HowToBuy />
+        <HowToBuyMobile /> */}
         <hr className='mt-40'></hr>
         <Footer />
         <Loading />
