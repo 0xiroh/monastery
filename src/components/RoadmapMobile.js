@@ -6,8 +6,8 @@ function RoadmapMobile() {
     const { t } = useTranslation();
   return (
     <div className='sm:hidden' id="roadmapMobile">
-        <h1 className='text-white text-5xl font-extrabold mb-6'>Roadmap</h1>
-        <p className='text-white fon text-lg mb-16'>Once we hit a target sell through percentage, MST will deliver each goal.<br/> More news will deploy in the future.</p>
+        <h1 className='text-white text-5xl font-extrabold mb-6'>{t('roadmapTitle')}</h1>
+        <p className='text-white fon text-lg mb-16'><Trans i18nKey="roadmapSubtitle"></Trans></p>
         <Carousel showStatus={false} showArrows={false} className="mb-36 w-[85vw] h-[20vh] mx-auto flex-col sm:hidden">
             <div className="flex-col">
                 <h1 className=' bg-white align-middle pt-[10%] font-extrabold text-2xl  block h-24'>20%</h1>   
@@ -23,7 +23,7 @@ function RoadmapMobile() {
             </div>
             <div className="flex-col">
                 <h1 className=' bg-white align-middle pt-[10%] font-extrabold text-2xl  block h-24'>65%</h1>   
-                <p className='block h-40 px-4  text-white mb-14 border-2 border-white pt-[6%]'>MST Convention<br/><br/>Network with MST in Medellin ONLY for Gyatso NFT holders.</p>
+                <p className='block h-40 px-4  text-white mb-14 border-2 border-white pt-[6%]'><Trans i18nKey="roadmap4"></Trans></p>
             </div>
             <div className="flex-col">
                 <h1 className=' bg-white align-middle pt-[10%] font-extrabold text-2xl  block h-24'>75%</h1>   
