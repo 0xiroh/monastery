@@ -322,7 +322,7 @@ function App() {
         <Navbar cA={address} cWallet={modalConnect} checkWallet={checkIfWalletIsConnected}  />
         <HeroDesktop cA={address} pA={providerWeb3} />
         <HeroText cA={account} cW={modalConnect} />
-        <MintMobile cA={account} pA={providerWeb3} />
+        <MintMobile cA={address} pA={providerWeb3} />
         <CallToAction cA={account} />
         <MobileVideo />
         <PerksDesktop />
