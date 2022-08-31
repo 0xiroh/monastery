@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
-import {useTranslation, Trans} from 'react-i18next'
+import { Trans } from 'react-i18next'
 
 function MobileVideo() {
   return (
