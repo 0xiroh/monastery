@@ -33,7 +33,7 @@ function Mint(props) {
             const addr = connection.address;
             <h1>Minting NFT</h1>;
             console.log("Going to pop wallet now to pay gas...")
-            const result = await contract.mint( { value: ethers.utils.parseEther('0.2') });
+            const result = await contract.mint( { value: ethers.utils.parseEther('0.15') });
             const contract2 = await getGlobalState('contract')
             console.log("Mining...please wait.")
             await result.wait();
