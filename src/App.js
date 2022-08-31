@@ -321,7 +321,7 @@ function App() {
       <div id='page-wrap'>
         <Navbar cA={address} cWallet={modalConnect} checkWallet={checkIfWalletIsConnected}  />
         <HeroDesktop cA={address} pA={providerWeb3} />
-        <HeroText cA={account} cW={modalConnect} />
+        <HeroText cA={address} cW={modalConnect} />
         <MintMobile cA={address} pA={providerWeb3} />
         <CallToAction cA={account} />
         <MobileVideo />
