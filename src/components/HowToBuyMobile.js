@@ -8,7 +8,7 @@ function HowToBuyMobile() {
     <Carousel showStatus={false} showArrows={false} showThumbs={false} className="mb-36 w-[85vw] h-[70vh] mx-auto flex-col md:hidden">
                 <div className='mb-12'>
                     <h1 className='text-white text-2xl font-bold my-2'>{t('howToBuy1')}</h1>
-                    <p className='text-white text-sm w-48 mx-auto text-center my-2'>{t('howToBuy1Description')} <a className='text-[#B2FF97]' href="https://metamask.io/">here</a></p>
+                    <p className='text-white text-sm w-48 mx-auto text-center my-2'>{t('howToBuy1Description')} <a className='text-[#B2FF97]' href="https://metamask.io/">aquí</a></p>
                     <img src="images/mm1.png" />
                 </div>
                 <div>
