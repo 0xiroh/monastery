@@ -5,6 +5,7 @@ import { ic_error_outline_outline } from 'react-icons-kit/md/ic_error_outline_ou
 
 const Alert = () => {
   const [alert] = useGlobalState('alert')
+  const [tx] = useGlobalState('tx')
   const closeNav = () => {
         document.getElementById("overlay").style.display = "none";
   }
@@ -21,13 +22,14 @@ const Alert = () => {
         bg-[#151c25] shadow-xl shadow-[#B2FF97] rounded-xl
         min-w-min py-3 px-10"
       >
-        {alert.color == 'red' ? (
-          <Icon icon={ic_error_outline_outline} className="text-red-600 text-4xl" />
+        {alert.color === 'red' ? (
+          <Icon icon={ic_error_outline_outline} size={36} className="text-red-600 text-4xl" />
         ) : (
-          <Icon icon={ic_check_circle_outline} className="text-green-600 text-4xl" />
+          <Icon icon={ic_check_circle_outline} size={36} className="text-green-600 text-4xl" />
         )}
-        <p className="text-white my-3">{alert.msg}</p>
-        <button className="cta-button my-4 connect-wallet-button border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]" onClick={closeNav}>Close</button>
+        <a className='text-white hover:text-[#B2FF97] cursor-pointer my-3 underline' href={tx}>{alert.msg}</a>
+        
+        <button className="cta-button my-8 connect-wallet-button border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]" onClick={closeNav}>Close</button>
       </div>
     </div>
   )

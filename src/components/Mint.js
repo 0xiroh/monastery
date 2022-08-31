@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ethers } from 'ethers';
 import MstNFT from '../utils/MstNFT.json';
 import Sidebar from "./Sidebar";
-import { setLoadingMsg, setAlert } from "../store";
+import { setLoadingMsg, setAlert, setTx } from "../store";
 import { useGlobalState, getGlobalState, setGlobalState } from "../store";
 
 function Mint(props) {
@@ -25,22 +25,23 @@ function Mint(props) {
         const { ethereum } = window;
 
         if (props.cA) {
-            // const provider = new ethers.providers.Web3Provider(ethereum);
+            const provider = new ethers.providers.Web3Provider(ethereum);
             const signer = props.pA.getSigner();
             const contract = new ethers.Contract(CONTRACT_ADDRESS, MstNFT.abi, signer);
             const connection = contract.connect(signer);
             setLoadingMsg('NFT minting in progress...')
             const addr = connection.address;
-            <h1>Minting NFT</h1>
+            <h1>Minting NFT</h1>;
             console.log("Going to pop wallet now to pay gas...")
-            const result = await contract.mint( { value: ethers.utils.parseEther('0.15') });
+            const result = await contract.mint( { value: ethers.utils.parseEther('0.2') });
             const contract2 = await getGlobalState('contract')
-
             console.log("Mining...please wait.")
             await result.wait();
-            
+            console.log('result: ', result)
             console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${result.hash}`);
-            setAlert('Minting successful...')
+
+            setAlert('Congrats, click to see your nft')
+            setTx(`https://testnets.opensea.io/${result.from}`)
 
         } else {
         console.log("Ethereum object doesn't exist!");

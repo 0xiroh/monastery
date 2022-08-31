@@ -1,7 +1,9 @@
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
+import { useTranslation, Trans } from 'react-i18next'
 
 function RoadmapMobile() {
+    const { t } = useTranslation();
   return (
     <div className='sm:hidden' id="roadmapMobile">
         <h1 className='text-white text-5xl font-extrabold mb-6'>Roadmap</h1>
@@ -9,15 +11,15 @@ function RoadmapMobile() {
         <Carousel showStatus={false} showArrows={false} className="mb-36 w-[85vw] h-[20vh] mx-auto flex-col sm:hidden">
             <div className="flex-col">
                 <h1 className=' bg-white align-middle pt-[10%] font-extrabold text-2xl  block h-24'>20%</h1>   
-                <p className='block h-24 px-4 text-white mb-14 border-2 border-white pt-[6%]'>Claim your  Gyatso cap for the metaverse and IRL. </p>
+                <p className='block h-24 px-4 text-white mb-14 border-2 border-white pt-[6%]'>{t("roadmap1")}</p>
             </div>
             <div className="flex-col">
                 <h1 className=' bg-white align-middle pt-[10%] font-extrabold text-2xl  block h-24'>35%</h1>   
-                <p className='block h-24 px-4  text-white mb-14 border-2 border-white pt-[6%]'>Claim 3 extra items of exclusive merchandise of MST.</p>
+                <p className='block h-24 px-4  text-white mb-14 border-2 border-white pt-[6%]'>{t("roadmap2")}</p>
             </div>
             <div className="flex-col">
                 <h1 className=' bg-white align-middle pt-[10%] font-extrabold text-2xl  block h-24'>50%</h1>   
-                <p className='block h-36 px-4 text-white mb-14 border-2 border-white pt-[6%]'>Random invitations to get to know Medellín MST style. <br/><br/> Events, luxury restaurants and experiences.</p>
+                <p className='block h-36 px-4 text-white mb-14 border-2 border-white pt-[6%]'>{t("roadmap3")}</p>
             </div>
             <div className="flex-col">
                 <h1 className=' bg-white align-middle pt-[10%] font-extrabold text-2xl  block h-24'>65%</h1>   
@@ -25,15 +27,15 @@ function RoadmapMobile() {
             </div>
             <div className="flex-col">
                 <h1 className=' bg-white align-middle pt-[10%] font-extrabold text-2xl  block h-24'>75%</h1>   
-                <p className='block h-24 px-4 text-white mb-14 border-2 border-white pt-[6%]'>Claim 1 exclusive new merch from this collection, inspired by the metaverse</p>
+                <p className='block h-24 px-4 text-white mb-14 border-2 border-white pt-[6%]'>{t("roadmap5")}</p>
             </div>
             <div className="flex-col">
                 <h1 className=' bg-white align-middle pt-[10%] font-extrabold text-2xl  block h-24'>80%</h1>   
-                <p className='block h-24 px-4 text-white mb-14 border-2 border-white pt-[6%]'>Random invitations to create a new cap with MST and RMA DESIGNS.</p>
+                <p className='block h-24 px-4 text-white mb-14 border-2 border-white pt-[6%]'>{t("roadmap6")}</p>
             </div>
             <div className="flex-col">
                 <h1 className=' bg-white align-middle pt-[10%] font-extrabold text-2xl  block h-24'>95%</h1>   
-                <p className='block h-24 px-4 text-white mb-14 border-2 border-white pt-[6%]'>Private AMAs with MST and recognized artists and models.</p>
+                <p className='block h-24 px-4 text-white mb-14 border-2 border-white pt-[6%]'>{t("roadmap7")}</p>
             </div>
             <div className="flex-col">
                 <h1 className=' bg-white align-middle pt-[10%] font-extrabold text-2xl  block h-24'>100%</h1>   

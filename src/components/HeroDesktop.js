@@ -36,9 +36,8 @@ function HeroDesktop(props) {
         <div className='hidden md:block'>
             <div className='h-20'/>
             <h1 className='text-white text-[3rem] mb-8 font-extrabold'>
-                <Trans i18nKey="title2">
-                    Get to experience <br></br> the MST lifestyle
-                </Trans>
+                <Trans i18nKey="title2"/>
+                
             </h1>
             <div className='h-20'/>
             <div className='flex justify-center'>

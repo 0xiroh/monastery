@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom"
+import { Icon } from "react-icons-kit";
+import { twitter } from "react-icons-kit/ikons/twitter";
+import { instagram } from "react-icons-kit/ikons/instagram";
+import { facebook_1 } from "react-icons-kit/ikons/facebook_1";
 
 function Footer() {
   return (
@@ -18,13 +22,25 @@ function Footer() {
                       <br></br>
                   </ul>
               </section>
-              <section>
+              
+              <section className="flex flex-row items-center justify-center gap-8 mt-32 sm:my-16">
+                <a href="https://twitter.com/Monastery_NFT">
+                    <Icon size={26} icon={twitter} className=" text-[#FFFFFF]"/>
+                </a>
+                <a href="https://www.facebook.com/MonasteryCouture/">
+                    <Icon size={26} icon={facebook_1} className=" text-[#FFFFFF]"/>
+                </a>
+                <a href="https://www.instagram.com/monasterycouture/">
+                    <Icon size={26} icon={instagram} className=" text-[#FFFFFF]"/>
+                </a>
 
               </section>
               <section className="bg-black flex my-28 justify-center h-20 items-center">
                   <h1 className="text-white">Powered by Centra</h1>
                   <img src="./images/centra.svg" alt="Centra Logo" className="h-10"/>
               </section>
+              
+
           </footer>
   )
 }

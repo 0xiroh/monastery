@@ -31,7 +31,7 @@ export default props => {
                 <hr className='w-[150%] mb-4 ml-[-15vw]'/>
                 
             </ul>
-            <div className='h-[40vh]'/>
+            <div className='h-[30vh]'/>
             <ul className="flex align-bottom">
               <hr className='w-[150%] mb-4 ml-[-15vw]'/>
               <li className="mx-4">
@@ -46,6 +46,11 @@ export default props => {
               Connected
             </button>)}
               </li>
+              <li className="mx-4">
+                <a href="https://shop.monasterynft.com" className='border-solid flex items-center border-2 text-center border-[#B2FF97] justify-center w-40 h-12 bg-[#b2ff97] text-black'>
+                  Buy with credit card</a>
+              </li>
+
             </ul>
     </Menu>
   );

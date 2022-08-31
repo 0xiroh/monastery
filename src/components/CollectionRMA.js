@@ -20,8 +20,8 @@ function CollectionRMA() {
             </div>
             <div className='flex flex-col order-1 justify-center items-center'>
 
-            <h1 className='text-white text-4xl font-extrabold mb-10 md:my-0'><Trans i18nKey="aboutTitle"></Trans></h1>
-            <p className='text-white text-justify w-72 md:w-[16vw] mx-auto pt-4' >{t('aboutDescription')}</p>
+                <h1 className='text-white text-4xl font-extrabold mb-10 md:my-0'><Trans i18nKey="aboutTitle"></Trans></h1>
+                <p className='text-white text-justify w-72 md:w-[16vw] mx-auto pt-4' >{t('aboutDescription')}</p>
             </div>
             <div className='flex mt-12 md:mt-0 flex-col order-3 justify-center items-center'>
                 <h1 className='text-white text-4xl block text-center font-extrabold myb-10 md:my-0'><Trans i18nKey="aboutRmaTitle"></Trans></h1>
