@@ -139,8 +139,7 @@ function Navbar(props) {
                     </a>
                 </li>
                 <li className="text-white mx-8">
-                    <a href="#HowToBuyD">
-                        Como comprar                    </a>
+                    <a href="#HowToBuyD">Como comprar</a>
                 </li>
                 
             </ul>
