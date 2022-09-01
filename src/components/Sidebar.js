@@ -5,7 +5,7 @@ import './Sidebar.css'
 export default props => {
   const renderNotConnectedContainer = () => (
       <button onClick={props.cWallet} className="border-solid bg-[#b2ff97] text-black w-40 h-12 border-2 border-[#B2FF97]">
-      Connect Wallet
+      Connectar Wallet
       </button>
   );
   useEffect(() => {
@@ -24,8 +24,8 @@ export default props => {
                 </li>
                 <hr className='w-[150%] my-4 ml-[-15vw]'/>
                 <li className="mx-4 mb-4 text-black">
-                    <a href="#roadmapMobile">
-                      How to buy
+                    <a href="#howToBuyMobile">
+                      Como comprar
                     </a>
                 </li>
                 <hr className='w-[150%] mb-4 ml-[-15vw]'/>
@@ -43,12 +43,12 @@ export default props => {
             renderNotConnectedContainer()
           ) : (
             <button className="cta-button connect-wallet-button border-solid text-black w-40 bg-[#b2ff97] h-12 border-2 border-[#B2FF97]">
-              Connected
+              Conectado
             </button>)}
               </li>
               <li className="mx-4">
-                <a href="https://shop.monasterynft.com" className='border-solid flex items-center border-2 text-center border-[#B2FF97] justify-center w-40 h-12 bg-[#b2ff97] text-black'>
-                  Buy with credit card</a>
+                <a href="https://shop.monasterynft.com/products/niftty" className='border-solid flex items-center border-2 text-center border-[#B2FF97] justify-center w-40 h-12 bg-[#b2ff97] text-black'>
+                  Compra con T.C.</a>
               </li>
 
             </ul>

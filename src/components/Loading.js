@@ -22,10 +22,10 @@ const Loading = () => {
       >
         <div className="flex flex-row justify-center items-center">
           <div className="lds-dual-ring scale-50"></div>
-          <p className="text-lg text-white">Minting...</p>
+          <p className="text-lg text-white">Minteando...</p>
         </div>
         <small className="text-white">{loading.msg}</small>
-        <button className="cta-button connect-wallet-button border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]" onClick={closeNav}>Close</button>
+        <button className="cta-button connect-wallet-button border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]" onClick={closeNav}>Cerrar</button>
       </div>
     </div>
   )

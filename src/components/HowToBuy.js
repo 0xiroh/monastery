@@ -39,6 +39,7 @@ function HowToBuy() {
     setUrl("4");
   }
   return (
+    <>
     <section className='hidden md:block' id="HowToBuyD">
       <h1 className='text-white font-extrabold text-4xl mb-24'>{t('howToBuyTitle')}</h1>
       <div className='grid grid-cols-2 justify-between items-center'>
@@ -77,6 +78,10 @@ function HowToBuy() {
         
       </div>
     </section>
+    <button className='hidden md:inline'>
+      <a href="https://shop.monasterynft.com/products/niftty" className='border-solid flex items-center border-2 text-center border-[#B2FF97] justify-center w-40 h-12 bg-[#b2ff97] text-black'>Compra con T.C.</a>
+    </button>
+    </>
   )
 }
 
