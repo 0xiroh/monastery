@@ -144,10 +144,10 @@ function Navbar(props) {
                 
             </ul>
         </div>
-        <div className=''>
+        <div className='sm:ml-24'>
             <Link to='/'><img className='w-44' src='///cdn.shopify.com/s/files/1/0252/0173/7780/files/Logo_Monastery_Mesa_de_trabajo_1_400x.png?v=1612014887' alt='Monastery Logo'></img></Link>
         </div>
-        <div className="items-center justify-center hidden md:flex">
+        <div className="items-center justify-center mx-[-3vw] hidden md:flex">
             <ul className="flex items-center justify-center ">
                 <li className="mx-4">
                   <a href="https://opensea.io/Monastery_NFT" className='border-solid flex items-center justify-center font-bold w-40 h-12 bg-[#2f2f2f] text-white'>
@@ -160,6 +160,10 @@ function Navbar(props) {
             <button className="cta-button connect-wallet-button border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]">
               Connected
             </button>)}
+                  {/*<button className='border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]' onClick={connectWallet}>Connect Wallet</button>*/}
+                </li>
+                <li className="mx-4">
+            <button className="cta-button connect-wallet-button border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]"><a href="https://shop.monasterynft.com/products/niftty">Compra con T.C</a></button>
                   {/*<button className='border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]' onClick={connectWallet}>Connect Wallet</button>*/}
                 </li>
             </ul>

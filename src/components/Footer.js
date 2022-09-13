@@ -3,6 +3,7 @@ import { Icon } from "react-icons-kit";
 import { twitter } from "react-icons-kit/ikons/twitter";
 import { instagram } from "react-icons-kit/ikons/instagram";
 import { facebook_1 } from "react-icons-kit/ikons/facebook_1";
+import { telegram } from 'react-icons-kit/icomoon/telegram'
 
 function Footer() {
   return (
@@ -29,6 +30,9 @@ function Footer() {
                 </a>
                 <a href="https://www.facebook.com/MonasteryCouture/">
                     <Icon size={26} icon={facebook_1} className=" text-[#FFFFFF]"/>
+                </a>
+                <a href="https://t.me/+mcYZXyu0WSAxZjY5">
+                    <Icon size={32} icon={telegram} className=" text-[#FFFFFF]"/>
                 </a>
                 <a href="https://www.instagram.com/monasterycouture/">
                     <Icon size={26} icon={instagram} className=" text-[#FFFFFF]"/>
