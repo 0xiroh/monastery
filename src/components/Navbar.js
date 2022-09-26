@@ -138,9 +138,9 @@ function Navbar(props) {
                       <span>Roadmap</span>
                     </a>
                 </li>
-                <li className="text-gray-200 mx-8">
-                    Como comprar
-                </li>
+                {/* <li className="text-white mx-8">
+                    <a href="#HowToBuyD">Como comprar</a>
+                </li> */}
                 
             </ul>
         </div>

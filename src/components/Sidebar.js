@@ -23,11 +23,11 @@ export default props => {
                     </a>
                 </li>
                 <hr className='w-[150%] my-4 ml-[-15vw]'/>
-                <li className="mx-4 mb-4 text-black">
+                {/* <li className="mx-4 mb-4 text-black">
                     <a href="#howToBuyMobile">
                       Como comprar
                     </a>
-                </li>
+                </li> */}
                 <hr className='w-[150%] mb-4 ml-[-15vw]'/>
                 
             </ul>
