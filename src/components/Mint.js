@@ -51,15 +51,17 @@ function Mint(props) {
   }
 
   return (
-    <div className={props.cA ? 'block' : 'hidden'}>
-      <h1 className='text-2xl font-extrabold text-white mb-6'>Mintea tu Gyatso NFT</h1>
-      <div className='h-20 grid grid-cols-6'>
-              <button onClick={numberDown} className='h-10 white px-5 mx-2 text-xl font-bold col-span-1 bg-[#B2FF97]'> - </button>
-              <input id='mintNumber' type="number" min={1} max={6} value={mintNumber} placeholder={1} className=' col-span-4 h-10 text-center outline-none' />
-              <button onClick={numberUp} className='white px-5 mx-2 h-10 bg-[#B2FF97] text-xl col-span-1 font-bold'> + </button>
-      </div>
-      <button onClick={askContractToMintNft} className='white px-5 mx-2 bg-[#B2FF97] h-10  font-extrabold text-xl'>Mint</button>
-    </div>
+    <>
+    </>
+    // <div className={props.cA ? 'block' : 'hidden'}>
+    //   <h1 className='text-2xl font-extrabold text-white mb-6'>Mintea tu Gyatso NFT</h1>
+    //   <div className='h-20 grid grid-cols-6'>
+    //           <button onClick={numberDown} className='h-10 white px-5 mx-2 text-xl font-bold col-span-1 bg-[#B2FF97]'> - </button>
+    //           <input id='mintNumber' type="number" min={1} max={6} value={mintNumber} placeholder={1} className=' col-span-4 h-10 text-center outline-none' />
+    //           <button onClick={numberUp} className='white px-5 mx-2 h-10 bg-[#B2FF97] text-xl col-span-1 font-bold'> + </button>
+    //   </div>
+    //   <button onClick={askContractToMintNft} className='white px-5 mx-2 bg-[#B2FF97] h-10  font-extrabold text-xl'>Mint</button>
+    // </div>
   )
 }
 

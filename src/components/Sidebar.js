@@ -46,10 +46,10 @@ export default props => {
               Conectado
             </button>)}
               </li>
-              <li className="mx-4">
+              {/* <li className="mx-4">
                 <a href="https://shop.monasterynft.com/products/niftty" className='border-solid flex items-center border-2 text-center border-[#B2FF97] justify-center w-40 h-12 bg-[#b2ff97] text-black'>
                   Compra con T.C.</a>
-              </li>
+              </li> */}
 
             </ul>
     </Menu>

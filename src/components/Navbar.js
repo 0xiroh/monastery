@@ -138,8 +138,8 @@ function Navbar(props) {
                       <span>Roadmap</span>
                     </a>
                 </li>
-                <li className="text-white mx-8">
-                    <a href="#HowToBuyD">Como comprar</a>
+                <li className="text-gray-200 mx-8">
+                    Como comprar
                 </li>
                 
             </ul>
@@ -162,10 +162,9 @@ function Navbar(props) {
             </button>)}
                   {/*<button className='border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]' onClick={connectWallet}>Connect Wallet</button>*/}
                 </li>
-                <li className="mx-4">
-            <button className="cta-button connect-wallet-button border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]"><a href="https://shop.monasterynft.com/products/niftty">Compra con T.C</a></button>
-                  {/*<button className='border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]' onClick={connectWallet}>Connect Wallet</button>*/}
-                </li>
+                {/* <li className="mx-4">
+                    <button className="cta-button connect-wallet-button border-solid text-[#B2FF97] w-40 h-12 border-2 border-[#B2FF97]"><a href="https://shop.monasterynft.com/products/niftty">Compra con T.C</a></button>
+                </li> */}
             </ul>
         </div>
     </nav>
