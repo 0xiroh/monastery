@@ -122,11 +122,11 @@ function Navbar(props) {
     <nav class="flex max-w-[95vw] justify-center align-center items-center mt-4 sm:justify-around sm:mx-auto sm:mb-10 static">
         <div className="items-center justify-center hidden md:flex md:ml-[-3%]">
             <ul className="flex items-center justify-center">
-                {/* <li>
+                <li>
                     {Object.keys(lngs).map(lng => (
                         <button type="submit" key={lng} onClick={() => i18n.changeLanguage(lng)} disabled={i18n.resolvedLanguage === lng}> {lngs[lng].flag} </button>
                     ))}
-                </li> */}
+                </li>
                 <li className="mx-4 cursor-pointer" onClick={() => togglePlay(snd)}>
                 <img src="images/playButton.png" className="" />
                 </li>
