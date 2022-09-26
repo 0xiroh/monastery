@@ -24,8 +24,10 @@ function HeroDesktop(props) {
                 
                 <p className={props.cA ? 'hidden' : 'text-white font-extrabold mt-4 text-4xl mb-10 text-center'}>{t('heroText')}</p>
                 <form action="https://monasterynft.us8.list-manage.com/subscribe/post?u=f7008c544caa2ef5d5d99950e&amp;id=bd15e4e84a" method="post" className={props.cA ? 'hidden' : 'mt-6 flex w-full'}>
-                    <input className='text-left pl-4 w-[20vw] block mr-3' type='email' id='email' name='email' placeholder='Enter your email' />
-                    <button type='submit' className='w-[20vw] font-bold h-10 bg-[#B2FF97]'> Get early access now</button>
+                    <input className='text-left pl-4 w-[35vw] block mr-3' type='email' id='email' name='email' placeholder='Enter your email' />
+                    <button className='w-[25vw] font-bold h-10 bg-[#B2FF97]'>
+                        <a href="http://eepurl.com/h0MQwb">Get early access now</a>
+                    </button>
                 </form>
                 <Mint cA={props.cA} pA={props.pA} />
                 <br></br>
