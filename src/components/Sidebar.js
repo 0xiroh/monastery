@@ -1,11 +1,13 @@
 import { React, useEffect } from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import './Sidebar.css'
+import { useTranslation } from 'react-i18next';
 
 export default props => {
+  const { t } = useTranslation();
   const renderNotConnectedContainer = () => (
       <button onClick={props.cWallet} className="border-solid bg-[#b2ff97] text-black w-40 h-12 border-2 border-[#B2FF97]">
-      Connectar Wallet
+      {t("connectWallet")}
       </button>
   );
   useEffect(() => {
@@ -28,12 +30,12 @@ export default props => {
                       Como comprar
                     </a>
                 </li> */}
-                <hr className='w-[150%] mb-4 ml-[-15vw]'/>
+                {/* <hr className='w-[150%] mb-4 ml-[-15vw]'/> */}
                 
             </ul>
             <div className='h-[30vh]'/>
             <ul className="flex align-bottom">
-              <hr className='w-[150%] mb-4 ml-[-15vw]'/>
+              {/* <hr className='w-[150%] mb-4 ml-[-15vw]'/> */}
               <li className="mx-4">
                 <a href="https://opensea.io/Monastery_nft" className='border-solid flex items-center justify-center font-bold w-40 h-12 bg-[#2f2f2f] text-white'>
                   <img src="/images/Group 2268.svg" className="mx-3 my-4"></img>OpenSea</a>
