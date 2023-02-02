@@ -16,22 +16,22 @@ function RoadmapDesktop() {
                     <p className='text-white font-light w-40 mx-auto text-md text-justify'>{t("roadmap1")}</p>
                 </li>
                 <li className='flex-col w-[12vw]'>
-                    <h1 className=' bg-white font-extrabold text-2xl pt-11 block h-28 mb-3'>35%</h1> 
+                    <h1 className=' bg-white font-extrabold text-2xl pt-11 block h-28 mb-3'>40%</h1> 
                     <p className='text-white font-light text-md w-40 mx-auto text-justify'>{t("roadmap2")}</p>
                 </li>
                 <li className='flex-col w-[12vw]'>
-                    <h1 className=' bg-white font-extrabold text-2xl pt-11 block h-28 mb-3'>50%</h1> 
+                    <h1 className=' bg-white font-extrabold text-2xl pt-11 block h-28 mb-3'>60%</h1> 
                     <p className='text-white font-light text-md w-40 mx-auto text-justify'>{t("roadmap3")}</p>
                 </li>
                 <li className='flex-col w-[12vw]'>
-                    <h1 className=' bg-white font-extrabold text-2xl pt-11 block h-28 mb-3'>65%</h1> 
+                    <h1 className=' bg-white font-extrabold text-2xl pt-11 block h-28 mb-3'>80%</h1> 
                     <p className='text-white font-light text-md w-40 mx-auto text-justify'><Trans i18nKey="roadmap4"></Trans></p>
                 </li>
                 <li className='flex-col w-[12vw]'>
-                    <h1 className=' bg-white font-extrabold text-2xl pt-11 block h-28 mb-3'>75%</h1> 
+                    <h1 className=' bg-white font-extrabold text-2xl pt-11 block h-28 mb-3'>100%</h1> 
                     <p className='text-white font-light text-md w-40 mx-auto text-justify'>{t("roadmap5")}</p>
                 </li>
-                <li className='flex-col w-[12vw]'>
+                {/* <li className='flex-col w-[12vw]'>
                     <h1 className=' bg-white font-extrabold text-2xl pt-11 block h-28 mb-3'>80%</h1> 
                     <p className='text-white font-light text-md w-40 mx-auto text-justify'>{t("roadmap6")}</p>
                 </li>
@@ -42,7 +42,7 @@ function RoadmapDesktop() {
                 <li className='flex-col w-[12vw]'>
                     <h1 className=' bg-white font-black text-2xl pt-11 block h-28 mb-3'>100%</h1> 
                     <p className='text-white font-light text-md w-[80%] mx-auto text-justify'>{t("roadmap8")}</p>
-                </li>
+                </li> */}
             </ul>
         </div>
     </div>
