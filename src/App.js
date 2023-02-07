@@ -10,6 +10,8 @@ import { providerOptions } from "./providerOptions";
 import React, { lazy } from "react";
 import MstNFT from './utils/MstNFT.json';
 import ReactPlayer from 'react-player';
+import { HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 
 const MetaverseKey = lazy(() => import('./components/MetaverseKey'));
 const CallToAction = lazy(() => import('./components/CallToAction'));
@@ -317,8 +319,13 @@ function App() {
 
   return (
     <div className="App">
+      <HelmetProvider>
       <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} cA={address} cWallet={modalConnect} checkWallet={checkIfWalletIsConnected} mint={askContractToMintNft} />
       <div id='page-wrap'>
+      <Helmet>
+      <title>MONASTERY - GYATSO NFT x RMA ACCESS OUR COMMUNITY</title>
+      <meta name='description' content='The GYTASO NFT will be the key to unlock every feature in the MSTverse , private parties , nft wearables , exclusive collections and more' />
+      </Helmet>
         <Navbar cA={address} cWallet={modalConnect} checkWallet={checkIfWalletIsConnected}  />
         <HeroDesktop cA={address} pA={providerWeb3} />
         <HeroText cA={address} cW={modalConnect} />
@@ -343,6 +350,7 @@ function App() {
         <Loading />
         <Alert />
       </div>
+      </HelmetProvider>
     </div>
   );
 }
